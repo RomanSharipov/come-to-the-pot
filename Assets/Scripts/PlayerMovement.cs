@@ -8,14 +8,12 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float _speed;
 
     private Rigidbody _rigidbody;
-    private Transform _transform;
-    private Vector3 _direction ;
+    private Vector3 _direction;
     private PlayerInput _playerInput;
 
-    private void Awake()
+    public void Init()
     {
         _playerInput = GetComponent<PlayerInput>();
-        _transform = GetComponent<Transform>();
         _rigidbody = GetComponent<Rigidbody>();
         
     }
