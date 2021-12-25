@@ -6,8 +6,7 @@ public class PlayerInput : MonoBehaviour
     [SerializeField] private Joystick _joystick;
 
     public event UnityAction<Vector2> Roll;
-
-    private Vector2 _direction = new Vector2();
+    private Vector2 _direction;
 
     private void FixedUpdate()
     {
